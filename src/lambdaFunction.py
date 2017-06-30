@@ -3,6 +3,7 @@ Based on Amazon Alexa Skill Kit Example
 """
 
 from __future__ import print_function
+import random
 
 
 # --------------- Helpers that build all of the responses ----------------------
@@ -41,7 +42,8 @@ def build_response(session_attributes, speechlet_response):
 def get_welcome_response():
     session_attributes = {}
     card_title = "Welcome"
-    speech_output = "Welcome to Dota Hero Picker. Would you like a Dota hero suggestion?"
+    speech_output = "Welcome to Dota Hero Picker. " \ 
+                    "Would you like a Dota hero suggestion?"
     reprompt_text = "Would you like a Dota hero suggestion?"
     should_end_session = False
     return build_response(session_attributes, build_speechlet_response(
@@ -57,14 +59,129 @@ def handle_session_end_request():
         card_title, speech_output, None, should_end_session))
 
 
-hero_list = []
-
+hero_list = ['Abaddon',
+             'Alchemist',
+             'Ancient Apparition',
+             'Anti-Mage',
+             'Arc Warden',
+             'Axe',
+             'Bane',
+             'Batrider',
+             'Beastmaster',
+             'Bloodseeker',
+             'Bounty Hunter',
+             'Brewmaster',
+             'Bristleback',
+             'Broodmother',
+             'Centaur Warrunner',
+             'Chaos Knight',
+             'Chen',
+             'Clinkz',
+             'Clockwerk',
+             'Crystal Maiden',
+             'Dark Seer',
+             'Dazzle',
+             'Death Prophet',
+             'Disruptor',
+             'Doom',
+             'Dragon Knight',
+             'Drow Ranger',
+             'Earth Spirit',
+             'Earthshaker',
+             'Elder Titan',
+             'Ember Spirit',
+             'Enchantress',
+             'Enigma',
+             'Faceless Void',
+             'Gyrocopter',
+             'Huskar',
+             'Invoker',
+             'Io',
+             'Jakiro',
+             'Juggernaut',
+             'Keeper of the Light',
+             'Kunkka',
+             'Legion Commander',
+             'Leshrac',
+             'Lich',
+             'Lifestealer',
+             'Lina',
+             'Lion',
+             'Lone Druid',
+             'Luna',
+             'Lycan',
+             'Magnus',
+             'Medusa',
+             'Meepo',
+             'Mirana',
+             'Monkey King',
+             'Morphling',
+             'Naga Siren',
+             'Natures Prophet',
+             'Necrophos',
+             'Night Stalker',
+             'Nyx Assassin',
+             'Ogre Magi',
+             'Omniknight',
+             'Oracle',
+             'Outworld Devourer',
+             'Phantom Assassin',
+             'Phantom Lancer',
+             'Phoenix',
+             'Puck',
+             'Pudge',
+             'Pugna',
+             'Queen of Pain',
+             'Razor',
+             'Riki',
+             'Rubick',
+             'Sand King',
+             'Shadow Demon',
+             'Shadow Fiend',
+             'Shadow Shaman',
+             'Silencer',
+             'Skywrath Mage',
+             'Slardar',
+             'Slark',
+             'Sniper',
+             'Spectre',
+             'Spirit Breaker',
+             'Storm Spirit',
+             'Sven',
+             'Techies',
+             'Templar Assassin',
+             'Terrorblade',
+             'Tidehunter',
+             'Timbersaw',
+             'Tinker',
+             'Tiny',
+             'Treant Protector',
+             'Troll Warlord',
+             'Tusk',
+             'Underlord',
+             'Undying',
+             'Ursa',
+             'Vengeful Spirit',
+             'Venomancer',
+             'Viper',
+             'Visage',
+             'Warlock',
+             'Weaver',
+             'Windranger',
+             'Winter Wyvern',
+             'Witch Doctor',
+             'Wraith King',
+             'Zeus']
 
 def randomize_hero():
-    return
-
-
-
+    session_attributes = {}
+    card_title = "Welcome"
+    hero = random.choice(hero_list)
+    speech_output = "You should play " + hero + ". Have fun!"
+    reprompt_text = None
+    should_end_session = True
+    return build_response(session_attributes, build_speechlet_response(
+        card_title, speech_output, reprompt_text, should_end_session))
 
 
 
@@ -98,10 +215,8 @@ def on_intent(intent_request, session):
     intent_name = intent_request['intent']['name']
 
     # Dispatch to your skill's intent handlers
-    if intent_name == "MyColorIsIntent":
-        return set_color_in_session(intent, session)
-    elif intent_name == "WhatsMyColorIntent":
-        return get_color_from_session(intent, session)
+    if intent_name == "RandomHeroPickerIntent":
+        return randomize_hero()
     elif intent_name == "AMAZON.HelpIntent":
         return get_welcome_response()
     elif intent_name == "AMAZON.CancelIntent" or intent_name == "AMAZON.StopIntent":

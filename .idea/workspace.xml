@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="127ccf78-75d3-4378-8d26-3912690bf3de" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/template.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dotaHeroPicker.iml" afterPath="$PROJECT_DIR$/dotaHeroPicker.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/speechAssets/LIST_OF_HEROES.txt" afterPath="$PROJECT_DIR$/speechAssets/LIST_OF_HEROES.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lambdaFunction.py" afterPath="$PROJECT_DIR$/src/lambdaFunction.py" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,18 +19,18 @@
       <file leaf-file-name="dotaHeroPicker.iml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dotaHeroPicker.iml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
+            <state relative-caret-position="325">
               <caret line="13" column="9" lean-forward="false" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lambdaFunction.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/lambdaFunction.py">
+      <file leaf-file-name="template.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/template.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="59" column="13" lean-forward="false" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
+            <state relative-caret-position="1249">
+              <caret line="94" column="0" lean-forward="true" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
               <folding>
                 <element signature="e#255#730#0" expanded="false" />
                 <element signature="e#797#925#0" expanded="false" />
@@ -42,14 +39,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="template.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/template.py">
+      <file leaf-file-name="lambdaFunction.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/lambdaFunction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+            <state relative-caret-position="700">
+              <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
               <folding>
-                <element signature="e#255#730#0" expanded="false" />
-                <element signature="e#797#925#0" expanded="false" />
+                <element signature="e#49#86#0" expanded="true" />
+                <element signature="e#811#939#0" expanded="false" />
+                <element signature="e#1797#4734#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -68,6 +66,7 @@
     <findStrings>
       <find>favoriteColor</find>
       <find>get_we</find>
+      <find>card_title</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -677,15 +676,15 @@
       <option name="presentableId" value="Default" />
       <updated>1498856352641</updated>
       <workItem from="1498856356768" duration="1597000" />
-      <workItem from="1498857990952" duration="3393000" />
+      <workItem from="1498857990952" duration="5108000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4990000" />
+    <option name="totallyTimeSpent" value="6705000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="2326" height="1258" extended-state="6" />
+    <frame x="-11" y="-11" width="2326" height="1258" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1114,7 +1113,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dotaHeroPicker.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
+        <state relative-caret-position="325">
           <caret line="13" column="9" lean-forward="false" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
           <folding />
         </state>
@@ -1122,8 +1121,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/template.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+        <state relative-caret-position="1249">
+          <caret line="94" column="0" lean-forward="true" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
           <folding>
             <element signature="e#255#730#0" expanded="false" />
             <element signature="e#797#925#0" expanded="false" />
@@ -1133,11 +1132,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lambdaFunction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="59" column="13" lean-forward="false" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
+        <state relative-caret-position="700">
+          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
           <folding>
-            <element signature="e#255#730#0" expanded="false" />
-            <element signature="e#797#925#0" expanded="false" />
+            <element signature="e#49#86#0" expanded="true" />
+            <element signature="e#811#939#0" expanded="false" />
+            <element signature="e#1797#4734#0" expanded="false" />
           </folding>
         </state>
       </provider>
