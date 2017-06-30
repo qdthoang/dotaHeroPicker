@@ -1,0 +1,5 @@
+RandomHeroPickerIntent which hero should I play
+RandomHeroPickerIntent suggestion please
+RandomHeroPickerIntent hero please
+RandomHeroPickerIntent give me a hero suggestion
+RandomHeroPickerIntent hero suggestion please
