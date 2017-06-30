@@ -1,5 +1,10 @@
 RandomHeroPickerIntent which hero should I play
 RandomHeroPickerIntent suggestion please
 RandomHeroPickerIntent hero please
-RandomHeroPickerIntent give me a hero suggestion
 RandomHeroPickerIntent hero suggestion please
+RandomHeroPickerIntent give me a hero suggestion
+RandomHeroPickerIntent surprise me
+RandomHeroPickerIntent I'm feeling lucky
+RandomHeroPickerIntent I trust you
+RandomHeroPickerIntent which hero should I pick
+RandomHeroPickerIntent pick a hero for me
