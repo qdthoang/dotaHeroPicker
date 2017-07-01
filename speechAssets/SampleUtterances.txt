@@ -8,3 +8,7 @@ RandomHeroPickerIntent I'm feeling lucky
 RandomHeroPickerIntent I trust you
 RandomHeroPickerIntent which hero should I pick
 RandomHeroPickerIntent pick a hero for me
+RandomHeroPickerIntent yes
+RandomHeroPickerIntent yup
+RandomHeroPickerIntent ok
+RandomHeroPickerIntent please
