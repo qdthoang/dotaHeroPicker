@@ -42,7 +42,7 @@ def build_response(session_attributes, speechlet_response):
 def get_welcome_response():
     session_attributes = {}
     card_title = "Welcome"
-    speech_output = "Welcome to Dota Hero Picker. " \ 
+    speech_output = "Welcome to Dota Hero Picker. " \
                     "Would you like a Dota hero suggestion?"
     reprompt_text = "Would you like a Dota hero suggestion?"
     should_end_session = False
