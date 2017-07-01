@@ -1,5 +1,7 @@
 """
 Based on Amazon Alexa Skill Kit Example
+
+Suggest a hero then ask whether user wants to re-roll
 """
 
 from __future__ import print_function
