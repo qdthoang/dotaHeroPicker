@@ -55,7 +55,7 @@ def get_welcome_response():
 def handle_session_end_request():
     card_title = "Session Ended"
     speech_output = "Thank you for trying the Dota Hero Picker. " \
-                    "Have a nice day! "
+                    "Have fun raising MMR! "
     should_end_session = True
     return build_response({}, build_speechlet_response(
         card_title, speech_output, None, should_end_session))
@@ -177,17 +177,12 @@ hero_list = ['Abaddon',
 
 def randomize_hero(intent, session):
     session_attributes = {}
-    card_title = intent['name']
+    card_title = "Random Dota Hero Suggestion"
     hero = random.choice(hero_list)
     speech_output = "You should play " + hero + \
-                    ". Do you want another hero?"
-    reprompt_text = "Do you want another hero?"
-
-    if session.get('attributes', {}):
-        should_end_session = False
-    else:
-        should_end_session = True
-
+                    ". Would you like another hero or stop?"
+    reprompt_text = "Would you like another hero or stop?"
+    should_end_session = False
     return build_response(session_attributes, build_speechlet_response(
         card_title, speech_output, reprompt_text, should_end_session))
 
@@ -224,7 +219,7 @@ def on_intent(intent_request, session):
 
     # Dispatch to your skill's intent handlers
     if intent_name == "RandomHeroPickerIntent":
-        return randomize_hero()
+        return randomize_hero(intent, session)
     elif intent_name == "AMAZON.HelpIntent":
         return get_welcome_response()
     elif intent_name == "AMAZON.CancelIntent" or intent_name == "AMAZON.StopIntent":
